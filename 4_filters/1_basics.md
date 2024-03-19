@@ -2,11 +2,11 @@
 
 A *std out* átirányításához a következőket alkalmazhatjuk 
 - fájl felülírása:
-  - >
-  - 1>
+  - \>
+  - 1\>
 - fájl végére írás 
-  - >>
-  - 1>>
+  - \>\>
+  - 1\>\>
 
 Például:
 ```bash
