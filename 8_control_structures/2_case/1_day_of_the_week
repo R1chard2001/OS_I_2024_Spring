@@ -1,0 +1,16 @@
+#!/bin/bash
+echo -n "A nap sorszáma: "
+read N
+#N=$(date '+%u')
+case $N in
+ 1) echo "Hétfő" ;;
+ 2)
+  echo "Kedd"
+  ;;
+ 3) echo "Szerda";;
+ 4) echo "Csütörtök";;
+ 5) echo "Péntek";;
+ 6) echo "Szombat";;
+ 7) echo "Vasárnap";;
+ *) echo "Nincs ilyen"
+esac

@@ -1,0 +1,7 @@
+#!/bin/env python3
+import sys
+
+print("Printing given arguments:")
+print(sys.argv)
+s = input("Enter a string: ")
+print(s)

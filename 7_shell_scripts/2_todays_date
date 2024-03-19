@@ -1,0 +1,5 @@
+#!/bin/bash
+DATUM=$(date '+%A')
+# same as
+#DATUM=`date '+%A'`
+echo "A mai nap: $DATUM"

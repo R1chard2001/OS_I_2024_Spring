@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Number of arguments"
+echo $#
+echo
+echo "How this program/script file was called"
+echo $0
+echo
+echo "1st parameter"
+echo $1
+echo
+echo "All parameter (without the 0th)"
+echo $@
+echo
+echo "Process id"
+echo $$

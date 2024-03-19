@@ -1,0 +1,14 @@
+#!/bin/bash
+trap "echo -e '\nBye'; exit" SIGINT
+my_func() {
+ echo
+ echo "\"my_func\" called. Exiting..."
+ exit
+}
+trap my_func SIGHUP
+
+while read A; do
+ continue
+done
+
+#use "timeout -s SIGHUP 1 ./7_signal_handling" to test SIGHUP

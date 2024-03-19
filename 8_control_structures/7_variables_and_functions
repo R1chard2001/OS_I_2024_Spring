@@ -1,0 +1,18 @@
+#!/bin/bash
+a=1
+
+func_a() {
+ a=2
+ echo "Value of a in func_a: $a"
+}
+
+func_b() {
+ local a=3
+ echo "Value of a in func_b: $a"
+}
+
+echo "Value of a: $a"
+func_a
+echo "Value of a: $a"
+func_b
+echo "Value of a: $a"

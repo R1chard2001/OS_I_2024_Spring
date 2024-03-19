@@ -1,1 +1,3 @@
-# OS_I_2024_Spring
+# Operációs rendszerek I
+
+A tananyag az alkönyvtárakban megtalálhatóak.

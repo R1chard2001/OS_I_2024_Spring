@@ -1,0 +1,47 @@
+#!/bin/bash
+K="Nincs megadva"
+V="Nincs megadva"
+I=$1
+
+help() {
+echo "A program használata:"
+echo "$0 [-k|--kezdet kezdőérték] [-v|--veg végérték] [-a|--alap]"
+echo "$0 -h|--help"
+}
+no_value_error() {
+echo "Nincs megadva a \"$1\" paraméternek érték!"
+exit 1
+}
+
+while [ $1 ]
+do
+ case $I in
+  -v | --veg)
+   shift
+   if [ -z $1 ]; then no_value_error $I; fi
+   V=$1
+   ;;
+  -k | --kezdet)
+   shift
+   if [ -z $1 ]; then no_value_error $I; fi
+   K=$1
+   ;;
+  -a | --alap)
+   V=0
+   K=1
+   ;;
+  -h | --help)
+   help
+   exit 0
+   ;;
+  *)
+   echo "Érvénytelen paraméter! A $1 paramétert nem értelmezi a program!"
+   help
+   exit 1
+   ;;
+  esac
+ shift
+ I=$1
+done
+echo "Kezdőérték: $K, végérték: $V"
+

@@ -1,0 +1,23 @@
+#!/bin/bash
+a() {
+ my_var=20
+ echo "this is a new function"
+}
+
+b() {
+ echo "this is another function"
+ echo $(($1 + $2))
+}
+
+c() {
+ return 11
+}
+
+a
+
+b 5 6
+
+result=$(b 5 6)
+c
+result_other=$?
+echo -e "Saved result:\n${result}_other\n$result_other"

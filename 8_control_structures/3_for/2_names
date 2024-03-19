@@ -1,0 +1,6 @@
+#!/bin/bash
+NEVEK="Péter Ilona Béla Pál János"
+for NEV in $NEVEK
+do
+ echo $NEV
+done

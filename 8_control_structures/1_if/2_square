@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Négyzet kerület, terület számolás"
+echo -n "'a' oldal hossza: "
+read A
+if [ $A -le 0 ]
+then
+ echo "Az oldal csak pozitív egész szám lehet!"
+ exit 1
+else
+ echo "Kerület: $((4 * $A))"
+ echo "Terület: $(($A ** 2))"
+fi

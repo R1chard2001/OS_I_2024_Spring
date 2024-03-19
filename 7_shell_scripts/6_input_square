@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Négyzet terület és kerület számolás."
+echo -n "'a' oldal hossza: "
+read A
+KER=$(($A * 4))
+TER=$(($A ** 2))
+echo -e "Kerület: $KER\nTerület: $TER"

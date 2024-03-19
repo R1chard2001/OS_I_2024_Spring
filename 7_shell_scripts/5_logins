@@ -1,0 +1,4 @@
+#!/bin/bash
+FILTER=$USER
+N=$(last | grep ^$FILTER | wc -l)
+echo "A \"$FILTER\" nevű felhasználó belépéseinek száma: $N"

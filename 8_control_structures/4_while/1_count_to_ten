@@ -1,0 +1,7 @@
+#!/bin/bash
+echo -n "Adj meg egy számot: "
+read N
+while [ $N -le 10 ]; do
+ echo "N = $N"
+ N=$(($N+1))
+done

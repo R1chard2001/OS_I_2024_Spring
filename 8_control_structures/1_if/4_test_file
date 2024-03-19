@@ -1,0 +1,10 @@
+#!/bin/bash
+TESTFILE="./test.txt"
+if [ -f $TESTFILE ]
+then
+ echo "A $TESTFILE már létezik! Tartalma:"
+ cat $TESTFILE
+else
+ echo $USER > $TESTFILE
+ echo "A $TESTFILE létrehozva."
+fi

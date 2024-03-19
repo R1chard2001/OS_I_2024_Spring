@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Négyzet kerület, terület számolás"
+echo -n "'a' oldal hossza: "
+read A
+if [ $A -lt 0 ]
+then
+ echo "Az oldal nem lehet negatív!"
+ exit 2
+elif [ $A -eq 0 ]
+then
+ echo "Az oldal nem lehet 0!"
+ exit 1
+else
+ echo "Kerület: $((4 * $A))"
+ echo "Terület: $(($A ** 2))"
+fi

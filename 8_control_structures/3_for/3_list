@@ -1,0 +1,6 @@
+#!/bin/bash
+LISTA=$(seq 0 1 23)
+for I in $LISTA
+do
+ echo $I
+done

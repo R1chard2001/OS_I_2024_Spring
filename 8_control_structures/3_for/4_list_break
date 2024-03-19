@@ -1,0 +1,9 @@
+#!/bin/bash
+LISTA=$(seq 0 1 23)
+for I in $LISTA
+do
+ echo $I
+ if [ $I -eq 10 ]; then
+  break
+ fi
+done

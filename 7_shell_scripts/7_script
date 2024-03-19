@@ -1,0 +1,58 @@
+#!/bin/bash
+FILE=7_example.json
+
+echo print json file in a better format
+#cat $FILE | jq .
+jq . $FILE
+
+read
+clear
+
+echo get a field
+cat $FILE | jq .mezo0
+echo
+echo or multiple fields
+cat $FILE | jq .mezo0,.mezo1
+
+read
+clear
+
+echo get an object
+cat $FILE | jq .objektum
+
+read
+clear
+
+echo "get an element in an array (index = 0)"
+cat $FILE | jq .tomb0[0]
+echo
+echo "indexer with a negative number (index = -1)"
+cat $FILE | jq .tomb0[-1]
+echo
+echo "2nd and 3rd element"
+cat $FILE | jq .tomb0[2,3]
+
+read
+clear
+
+echo "from the 4th element"
+cat $FILE | jq .tomb0[4:]
+echo "to 6th element"
+cat $FILE | jq .tomb0[:6]
+echo "and the two combined"
+cat $FILE | jq .tomb0[4:6]
+
+read
+clear
+
+echo "combine multiple filters in one query"
+cat $FILE | jq .objektum.tomb
+
+read
+clear
+
+echo "get the length of the arrays"
+echo -n "first array:  "
+cat $FILE | jq ".tomb0 | length"
+echo -n "second array: "
+cat $FILE | jq '.objektum.tomb | length'

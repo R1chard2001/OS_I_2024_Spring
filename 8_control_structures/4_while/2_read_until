@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Írd hogy 'vége', hogyha be szeretnét zárni a programot!"
+while read SOR
+do
+ [ $SOR = "vége" ] && break
+done

@@ -1,0 +1,5 @@
+#!/bin/bash
+while read L; do
+ echo $L | tr a-zöüóőúűéáí A-ZÖÜÓŐÚŰÉÁÍ
+done
+echo "Exiting..."
