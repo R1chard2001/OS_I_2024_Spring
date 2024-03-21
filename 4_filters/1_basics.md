@@ -160,6 +160,18 @@ Egy szűrőt többször is alkalmazhatunk egy parancs futtatásakor.
 cat /etc/passwd | cut -d : -f 7 | sort | uniq -c | sort -n
 ```
 
+# *curl* és *wget*
+
+A két alkalmazás hasonló, *wget*-et csak fájlok letöltésére szoktuk használni, *curl*-el viszont többet is megtudunk tenni (pl.: fájl feltöltése).
+
+használatuk:
+```bash
+wget example.com
+
+curl example.com
+```
+Érdemes megnézni a kézikönyvüket az alkalmazásoknak.
+
 ### Egyéb könyvtárak
 Egyéb könyvtárak amiken lehet még gyakorolni:
 - /proc/ioports
