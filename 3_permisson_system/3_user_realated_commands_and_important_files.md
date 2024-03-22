@@ -16,10 +16,7 @@ umask 0022
 Fájl tulajdonosának megváltoztatása. Csak root jogosultsággal használható.
 ```bash
 chown user file
-# vagy
-chown file
 ```
-#chown [owner] file
 
 ## *chgrp*
 
