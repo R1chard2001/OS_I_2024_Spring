@@ -1,12 +1,12 @@
-# Jogosultsági rendszerek - fájl
+# Jogosultsági rendszerek - könyvtár
 
-Egy fájl jogosultsága hasonlóan néz ki. Segítségképpen két külön sorba vettem a jogosultságokat.
+Egy könyvtér jogosultsága hasonlóan néz ki. Segítségképpen két külön sorba vettem a jogosultságokat.
 
 s uuu ggg ooo
 \- rwx rwx rwx
 
 Jelmagyarázat:
-- s: különleges fájl-e
+- s: különleges fájl-e (itt ez mindig 'd')
 - u: felhasználó/tulajdonos
 - g: csoport
 - o: más felhasználók
@@ -32,9 +32,8 @@ chmod 755 my_file
 ### Különleges jogosultságok
 
 Ha *chmod* használata közben 4 számjegyű számot adunk meg, akkor ezeket állíthatjuk be.
-2___ esetén ha futtatjuk a fájlt, akkor a hozzá tartozó csoport jogosultságaival tudjuk futtatni.
-4___ esetén pedig a tulajdonos jogosultságaival futtathatjuk. 
-Egyik példa erre a *passwd* parancs, amivel a jelszavunkat változtathajuk meg.
+Ha 1777-t adunk egy könyvár jogosultságának, akkor a felhasználók létre tudnak hozni benne fájlokat, viszont csak a sajátjukat tudják törölni, illetve módosítani
+Egyik példa erre a */tmp* könyvtár.
 
 ### Karakteres használat
 
