@@ -1,0 +1,16 @@
+#!/bin/bash
+echo -n "a: "
+read A
+echo -n "b: "
+read B
+
+RES1=$(bc <<< "scale=5; $A / $B")
+RES2=$(
+bc << EOF
+ scale=10
+ $A / $B
+EOF
+)
+
+echo "RES1 = $RES1"
+echo "RES2 = $RES2"
