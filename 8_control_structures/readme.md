@@ -55,3 +55,6 @@ Akár php-ban is írhatunk szkripteket. Ebben és az előző fejezetben lévő s
 
 ## 11) argumentumok jobb kezelése
 A program bemutatja, hogy hogyan kezelhetünk jobban argumentumokat. Bizonyos argumentumok értéket is várhatnak el, erre is van példa a szkriptben.
+
+## 12) lebegőpontos számolás bash szkriptekben
+A *bc* program segítségével akár bash szkripten belül is számolhatunk tört számokat. Megadhatjuk a **scale=n** sorral a pont utáni tizedes jegyeket. Ezt a programot nem csak 10-es alapú számrendszerek számolására használhalhatjuk.
