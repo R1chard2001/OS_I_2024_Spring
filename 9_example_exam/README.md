@@ -3,8 +3,14 @@
 ## 1. Másodfokú egyenlet megoldó szkript
 
 Írjon egy szkriptet, mely kiszámlja egy másodfokú egyenlet megoldásait (zérushelyét). A szkript értelmezője legyen bash.
-A diszrkiminánst (a^2 - 4 * a *c) számolja ki egy másik szrkipt, ami python (vagy php) nyelven van megírva.
-A fő szkripten ellenőrizze a diszkrimináns értékét (negatív -> nincs, 0 -> pontosan egy, pozitív -> kettő zérushely van), ez alapján kimenetként írjon annyi megoldást.
+A diszrkiminánst 
+(a^2-4\*a\*c) számolja ki egy másik szrkipt, ami python/php nyelven van megírva.
+A fő szkripten ellenőrizze a diszkrimináns értékét: 
+- negatív -> nincs
+- 0 -> pontosan egy
+- pozitív -> kettő zérushely van
+  
+Ez alapján kimenetként írjon annyi megoldást.
 A négyzetgyök értékét és további számolásogat számolja ki a 'bc' program segítségével.
 
 ## 2. Névhez tartozó kor és nemzetiség api
