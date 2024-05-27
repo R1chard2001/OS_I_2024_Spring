@@ -2,7 +2,7 @@
 
 Kinézete:
 ```bash
-case $variable in:
+case $variable in
  case1): ...;;
  case2):
   ...
